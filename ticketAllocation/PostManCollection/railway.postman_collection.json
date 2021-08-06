@@ -1,0 +1,184 @@
+{
+	"info": {
+		"_postman_id": "94ff26ad-10b1-4485-bde7-4de94aa91221",
+		"name": "railway",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "female_with_child_and_2_male",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n     {\n    \"passengerName\": \"female1\",\n    \"age\": 75,\n    \"gender\" : \"F\",\n    \"berthPerference\": \"lower\"\n    },\n    {\n    \"passengerName\": \"child1\",\n    \"age\": 3,\n    \"gender\" : \"F\",\n    \"berthPerference\": \"upper\"\n    },\n    {\n    \"passengerName\": \"male1\",\n    \"age\": 49,\n    \"gender\" : \"M\",\n    \"berthPerference\": \"middle\"\n    },\n    {\n    \"passengerName\": \"male2\",\n    \"age\": 45,\n    \"gender\" : \"M\",\n    \"berthPerference\": \"middle\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/reservation/bookTickets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservation",
+						"bookTickets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "elder_above_60",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n     {\n    \"passengerName\": \"elder\",\n    \"age\": 75,\n    \"gender\" : \"M\",\n    \"berthPerference\": \"lower\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/reservation/bookTickets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservation",
+						"bookTickets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "child_below_5_years",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n     {\n    \"passengerName\": \"child\",\n    \"age\": 4,\n    \"gender\" : \"M\",\n    \"berthPerference\": \"lower\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/reservation/bookTickets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservation",
+						"bookTickets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "2_female_with_2_child",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n     {\n    \"passengerName\": \"female1\",\n    \"age\": 35,\n    \"gender\" : \"F\",\n    \"berthPerference\": \"lower\"\n    },\n    {\n    \"passengerName\": \"child1\",\n    \"age\": 3,\n    \"gender\" : \"F\",\n    \"berthPerference\": \"upper\"\n    },\n    {\n    \"passengerName\": \"female2\",\n    \"age\": 49,\n    \"gender\" : \"F\",\n    \"berthPerference\": \"middle\"\n    },\n    {\n    \"passengerName\": \"child2\",\n    \"age\": 4,\n    \"gender\" : \"M\",\n    \"berthPerference\": \"middle\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/reservation/bookTickets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservation",
+						"bookTickets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "5_male_1_female",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n     {\n    \"passengerName\": \"male1\",\n    \"age\": 30,\n    \"gender\" : \"M\",\n    \"berthPerference\": \"lower\"\n    },\n    {\n    \"passengerName\": \"male2\",\n    \"age\": 35,\n    \"gender\" : \"M\",\n    \"berthPerference\": \"upper\"\n    },\n    {\n    \"passengerName\": \"male3\",\n    \"age\": 40,\n    \"gender\" : \"M\",\n    \"berthPerference\": \"middle\"\n    },\n    {\n    \"passengerName\": \"male4\",\n    \"age\": 45,\n    \"gender\" : \"M\",\n    \"berthPerference\": \"middle\"\n    },\n    {\n    \"passengerName\": \"male5\",\n    \"age\": 50,\n    \"gender\" : \"M\",\n    \"berthPerference\": \"middle\"\n    },\n        {\n    \"passengerName\": \"female1\",\n    \"age\": 45,\n    \"gender\" : \"F\",\n    \"berthPerference\": \"middle\"\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/reservation/bookTickets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservation",
+						"bookTickets"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "39 person",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n  {\n    \"passengerName\": \"person1\",\n    \"age\": 30,\n    \"gender\": \"M\",\n    \"berthPerference\": \"lower\"\n  },\n  {\n    \"passengerName\": \"person2\",\n    \"age\": 35,\n    \"gender\": \"M\",\n    \"berthPerference\": \"upper\"\n  },\n  {\n    \"passengerName\": \"person3\",\n    \"age\": 40,\n    \"gender\": \"M\",\n    \"berthPerference\": \"middle\"\n  },\n  {\n    \"passengerName\": \"person4\",\n    \"age\": 45,\n    \"gender\": \"M\",\n    \"berthPerference\": \"middle\"\n  },\n  {\n    \"passengerName\": \"person5\",\n    \"age\": 50,\n    \"gender\": \"M\",\n    \"berthPerference\": \"middle\"\n  },\n  {\n    \"passengerName\": \"person6\",\n    \"age\": 30,\n    \"gender\": \"M\",\n    \"berthPerference\": \"middle\"\n  },\n  {\n    \"passengerName\": \"person7\",\n    \"age\": 30,\n    \"gender\": \"M\",\n    \"berthPerference\": \"lower\"\n  },\n  {\n    \"passengerName\": \"person8\",\n    \"age\": 35,\n    \"gender\": \"M\",\n    \"berthPerference\": \"upper\"\n  },\n  {\n    \"passengerName\": \"person9\",\n    \"age\": 40,\n    \"gender\": \"M\",\n    \"berthPerference\": \"middle\"\n  },\n  {\n    \"passengerName\": \"person10\",\n    \"age\": 45,\n    \"gender\": \"M\",\n    \"berthPerference\": \"middle\"\n  },\n  {\n    \"passengerName\": \"person11\",\n    \"age\": 50,\n    \"gender\": \"M\",\n    \"berthPerference\": \"middle\"\n  },\n  {\n    \"passengerName\": \"person12\",\n    \"age\": 30,\n    \"gender\": \"M\",\n    \"berthPerference\": \"middle\"\n  },\n  {\n    \"passengerName\": \"person13\",\n    \"age\": 30,\n    \"gender\": \"M\",\n    \"berthPerference\": \"lower\"\n  },\n  {\n    \"passengerName\": \"person14\",\n    \"age\": 35,\n    \"gender\": \"M\",\n    \"berthPerference\": \"upper\"\n  },\n  {\n    \"passengerName\": \"person15\",\n    \"age\": 40,\n    \"gender\": \"M\",\n    \"berthPerference\": \"middle\"\n  },\n  {\n    \"passengerName\": \"person16\",\n    \"age\": 45,\n    \"gender\": \"M\",\n    \"berthPerference\": \"middle\"\n  },\n  {\n    \"passengerName\": \"person17\",\n    \"age\": 50,\n    \"gender\": \"M\",\n    \"berthPerference\": \"middle\"\n  },\n  {\n    \"passengerName\": \"person18\",\n    \"age\": 30,\n    \"gender\": \"M\",\n    \"berthPerference\": \"middle\"\n  },\n  {\n    \"passengerName\": \"person19\",\n    \"age\": 30,\n    \"gender\": \"M\",\n    \"berthPerference\": \"lower\"\n  },\n  {\n    \"passengerName\": \"person20\",\n    \"age\": 35,\n    \"gender\": \"M\",\n    \"berthPerference\": \"upper\"\n  },\n  {\n    \"passengerName\": \"person21\",\n    \"age\": 40,\n    \"gender\": \"M\",\n    \"berthPerference\": \"middle\"\n  },\n  {\n    \"passengerName\": \"person22\",\n    \"age\": 45,\n    \"gender\": \"M\",\n    \"berthPerference\": \"middle\"\n  },\n  {\n    \"passengerName\": \"person23\",\n    \"age\": 50,\n    \"gender\": \"M\",\n    \"berthPerference\": \"middle\"\n  },\n  {\n    \"passengerName\": \"person24\",\n    \"age\": 30,\n    \"gender\": \"M\",\n    \"berthPerference\": \"middle\"\n  },\n  {\n    \"passengerName\": \"person25\",\n    \"age\": 30,\n    \"gender\": \"M\",\n    \"berthPerference\": \"lower\"\n  },\n  {\n    \"passengerName\": \"person26\",\n    \"age\": 35,\n    \"gender\": \"M\",\n    \"berthPerference\": \"upper\"\n  },\n  {\n    \"passengerName\": \"person27\",\n    \"age\": 40,\n    \"gender\": \"M\",\n    \"berthPerference\": \"middle\"\n  },\n  {\n    \"passengerName\": \"person28\",\n    \"age\": 45,\n    \"gender\": \"M\",\n    \"berthPerference\": \"middle\"\n  },\n  {\n    \"passengerName\": \"person29\",\n    \"age\": 50,\n    \"gender\": \"M\",\n    \"berthPerference\": \"middle\"\n  },\n  {\n    \"passengerName\": \"person30\",\n    \"age\": 30,\n    \"gender\": \"M\",\n    \"berthPerference\": \"middle\"\n  },\n  {\n    \"passengerName\": \"person31\",\n    \"age\": 30,\n    \"gender\": \"M\",\n    \"berthPerference\": \"lower\"\n  },\n  {\n    \"passengerName\": \"person32\",\n    \"age\": 35,\n    \"gender\": \"M\",\n    \"berthPerference\": \"upper\"\n  },\n  {\n    \"passengerName\": \"person33\",\n    \"age\": 40,\n    \"gender\": \"M\",\n    \"berthPerference\": \"middle\"\n  },\n  {\n    \"passengerName\": \"person34\",\n    \"age\": 45,\n    \"gender\": \"M\",\n    \"berthPerference\": \"middle\"\n  },\n  {\n    \"passengerName\": \"person35\",\n    \"age\": 50,\n    \"gender\": \"M\",\n    \"berthPerference\": \"middle\"\n  },\n  {\n    \"passengerName\": \"person36\",\n    \"age\": 30,\n    \"gender\": \"M\",\n    \"berthPerference\": \"middle\"\n  },\n  {\n    \"passengerName\": \"person37\",\n    \"age\": 30,\n    \"gender\": \"M\",\n    \"berthPerference\": \"lower\"\n  },\n  {\n    \"passengerName\": \"person38\",\n    \"age\": 35,\n    \"gender\": \"M\",\n    \"berthPerference\": \"upper\"\n  },\n  {\n    \"passengerName\": \"person39\",\n    \"age\": 40,\n    \"gender\": \"M\",\n    \"berthPerference\": \"middle\"\n  }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/reservation/bookTickets",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"reservation",
+						"bookTickets"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}

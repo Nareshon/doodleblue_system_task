@@ -1,0 +1,9 @@
+----> Each will have 4 portions (upper,lower,middle,side),each portion has 2 seats. Side lower seat will be allocated for RAC passengers and hence 2 people can sit in side lower seat per coach.
+
+----> If a coach has more than 4 men,then any ladies booking after that will not be allocated in that coach and will be moved to the next coach
+
+----> People above 60 and ladies with children will be allocated lower berth if available
+
+----> Children below 5 years will not be allocated ticket
+
+----> There are 24 confirmed tickets,8 rac tickets,5 waiting tickets.
